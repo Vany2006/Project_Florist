@@ -1,0 +1,24 @@
+# This is a basic workflow that is manually triggered
+
+name: Florist Workflow
+
+on:
+  push:
+    branches: [ master ]   # Pastikan branch sesuai!
+
+jobs:
+  greeting:
+    runs-on: ubuntu-latest   # runner default GitHub
+
+    steps:
+      - name: Run PHP File
+        run: echo "Welcome to Florist VanyWaran!"
+
+      - name: Project_1_Group_8
+        run: echo "Current time is $(date) ⏱️"
+
+      - name: Show GitHub Info
+        run: |
+          echo "Repository: ${{ github.repository }}"
+          echo "Branch: ${{ github.ref }}"
+          echo "Commit: ${{ github.sha }}"
