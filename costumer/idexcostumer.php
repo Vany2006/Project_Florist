@@ -2,7 +2,7 @@
   // Ambil nama file yang sedang dibuka
   $current_page = basename($_SERVER['PHP_SELF']);
   session_start();
-include '../config/database.php';
+include '../Config/database.php';
 ?>
 
 <!DOCTYPE html>
@@ -19,7 +19,7 @@ include '../config/database.php';
 <header>
   <!-- Kiri: Account -->
   <div class="header-left">
-    <a href="<?php echo isset($_SESSION['user_id']) ? 'profilecst.php' : 'auth/login.php'; ?>" 
+    <a href="<?php echo isset($_SESSION['user_id']) ? 'profilecst.php' : '../auth/login.php'; ?>" 
        class="<?php echo ($current_page == 'profilecst.php') ? 'active' : ''; ?>">
       <img src="../Assets/img/iconprofile.png" alt="Account" width="20"> Account
     </a>

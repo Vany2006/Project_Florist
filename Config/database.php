@@ -1,9 +1,9 @@
 <?php
 
 // Konfigurasi koneksi
-$servername = "localhost";   // server database (default: localhost)
-$username   = "root";        // username MySQL (default XAMPP: root)
-$password   = "";            // password MySQL (kosong untuk XAMPP)
+$servername = "mysql";   // server database (default: localhost)
+$username   = "appuser";        // username MySQL (default XAMPP: root)
+$password   = "password";            // password MySQL (kosong untuk XAMPP)
 $database   = "florist";     // nama database kamu
 
 // Membuat koneksi

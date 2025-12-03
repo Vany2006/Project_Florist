@@ -2,7 +2,7 @@
   // Ambil nama file yang sedang dibuka
   $current_page = basename($_SERVER['PHP_SELF']);
   session_start();
-include '../config/database.php';
+include '../Config/database.php';
 
 // Cek apakah user sudah login
 if (!isset($_SESSION['user_id'])) {
